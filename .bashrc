@@ -84,8 +84,18 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# Alias definitions.
+
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+## definitions here until ~/.bash_aliases is created
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -104,14 +114,12 @@ alias ytdl-mp3='yt-dlp --extract-audio --audio-format mp3 '
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+alias lc='colorls -lA --sd'
+alias has="curl -sL https://git.io/_has | bash -s"
+alias navi="navi --print"
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+alias explorer="explorer.exe ."
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -127,9 +135,8 @@ fi
 source /home/colin/.config/broot/launcher/bash/br
 . "$HOME/.cargo/env"
 source $(dirname $(gem which colorls))/tab_complete.sh
-alias lc='colorls -lA --sd'
-alias has="curl -sL https://git.io/_has | bash -s"
-alias navi="navi --print"
+
+
 
 # HSTR configuration - add this to ~/.bashrc
 alias hh=hstr                    # hh to be alias for hstr
@@ -149,4 +156,4 @@ eval "$(lua /home/colin/z.lua/z.lua --init bash enhanced once fzf)"
 LS_COLORS="ow=01;36;40" && export LS_COLORS
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
-alias explorer="explorer.exe ."
+
