@@ -1,9 +1,9 @@
 # dotfiles
 
 
-Setup WSL 2 (h/t https://github.com/nikiforovall/dotfiles)
+## Setup WSL 2
 -----------
-
+(h/t https://github.com/nikiforovall/dotfiles)
 - Enable WSL 2 and update the linux kernel ([Source](https://docs.microsoft.com/en-us/windows/wsl/install-win10))
 
 ```powershell
