@@ -7,3 +7,5 @@
 	selected = manager-core
 [core]
 	autocrlf = false
+[alias]
+	ac = !git add -A && git commit -m
