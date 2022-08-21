@@ -151,7 +151,6 @@
   "gitlens.codeLens.enabled": false,
 
   "code-runner.respectShebang": false,
-  "code-runner.terminalRoot": "/mnt/",
 
   "sourcery.token": "user_gAV9JRWTo6vh9m_4ozEQ1FlvV2zMjfHsbneV7qO0OqYN1YJWyCkOy6jg944",
 
