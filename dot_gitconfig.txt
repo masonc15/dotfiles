@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = masonc789@gmail.com
+	name = Colin Mason
+[credential "helperselector"]
+	selected = manager-core
+[core]
+	autocrlf = false
