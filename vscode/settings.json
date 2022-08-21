@@ -1,0 +1,206 @@
+{
+  // below settings will not be synced across devices
+  "settingsSync.ignoredSettings": ["editor.fontSize"],
+
+  // security and telemetry settings
+  // --------------------------------------------------------------
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+  "telemetry.telemetryLevel": "off",
+
+  // file settings
+  // --------------------------------------------------------------
+  "files.eol": "\n",
+  "files.autoGuessEncoding": true,
+  "files.encoding": "utf8bom",
+  "files.autoSave": "afterDelay", // default is 1000ms
+  "files.defaultLanguage": "markdown",
+  "files.insertFinalNewline": true, // prevents git issues
+  "files.trimFinalNewlines": true, // removes extra newlines beyond the one added by previous setting
+
+  // search settings
+  // --------------------------------------------------------------
+  "search.exclude": {
+    "**/.history": true
+  },
+
+  // editor settings
+  // --------------------------------------------------------------
+  "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.renderLineHighlight": "none",
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabCompletion": "on",
+  "editor.renderWhitespace": "none",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.quickSuggestionsDelay": 1,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.fontFamily": "Borg Sans Mono Regular",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.4,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": true,
+  "editor.experimental.stickyScroll.enabled": true,
+  "editor.foldingHighlight": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+
+  // explorer view settings
+  // --------------------------------------------------------------
+  "explorer.sortOrder": "modified",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // workbench settings
+  // --------------------------------------------------------------
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.decorations.colors": false,
+  "workbench.localHistory.maxFileSize": 9000,
+  "workbench.editor.preferHistoryBasedLanguageDetection": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorTheme": "Dracula",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#3b4733",
+    "statusBar.noFolderBackground": "#212121",
+    "statusBar.debuggingBackground": "#263238",
+    "editor.foldBackground": "#363736"
+  },
+
+  // terminal settings
+  // --------------------------------------------------------------
+  "terminal.integrated.cwd": "${fileDirname}",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.fontFamily": "FiraMono NF",
+  "terminal.integrated.fontSize": 13,
+  "output.smartScroll.enabled": false,
+
+  // problems settings
+  // --------------------------------------------------------------
+  "problems.showCurrentInStatus": true,
+  "problems.decorations.enabled": false,
+
+  // window settings
+  // --------------------------------------------------------------
+  "window.newWindowDimensions": "maximized",
+  "window.commandCenter": true,
+
+  // git settings
+  // --------------------------------------------------------------
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autoRepositoryDetection": true,
+  "gitHistory.showEditorTitleMenuBarIcons": false,
+
+  // macro settings
+  // --------------------------------------------------------------
+  "macros.list": {
+    "moveToDone": [
+      "cursorHomeSelect",
+      "cursorHomeSelect",
+      "editor.action.clipboardCutAction",
+      "cursorBottom",
+      "pythonIndent.newlineAndIndent",
+      "editor.action.clipboardPasteAction"
+    ]
+  },
+
+  //markdown language and extension settings
+  // --------------------------------------------------------------
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true
+  },
+  "markdown.extension.print.theme": "dark",
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-checkbox.dateFormat": "h:mm A",
+  "markdown-checkbox.italicWhenChecked": false,
+  "markdown-checkbox.strikeThroughWhenChecked": false,
+  "markdown-checkbox.typeOfBulletPoint": "-",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.latexEngine": "xelatex",
+
+  // Copilot settings
+  // --------------------------------------------------------------
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "txt": false,
+    "jsonc": true
+  },
+  "github.copilot.inlineSuggest.enable": true,
+
+  // extension-specific settings
+  // --------------------------------------------------------------
+  "code-runner.preserveFocus": false,
+  "code-runner.runInTerminal": true,
+  "code-runner.fileDirectoryAsCwd": true,
+
+  "gitlens.codeLens.enabled": false,
+
+  "code-runner.respectShebang": false,
+  "code-runner.terminalRoot": "/mnt/",
+
+  "sourcery.token": "user_gAV9JRWTo6vh9m_4ozEQ1FlvV2zMjfHsbneV7qO0OqYN1YJWyCkOy6jg944",
+
+  "projectManager.git.baseFolders": ["C:\\Users\\darks\\Dropbox\\workspace"],
+
+  // language-specific settings
+  // --------------------------------------------------------------
+  "python.formatting.provider": "yapf",
+  "python.terminal.executeInFileDir": true,
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showConstants": false,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showEnums": false,
+    "editor.suggest.showEnumMembers": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showEvents": false,
+    "editor.suggest.showFiles": false,
+    "editor.suggest.showFolders": false,
+    "editor.minimap.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.selectionHighlight": false
+  },
+
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+
+  "json.format.enable": false
+}
